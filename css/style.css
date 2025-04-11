@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+:root {
+  --fonte-paragrafos: 'Roboto', Arial, sans-serif;
+  --fonte-titulos: 'Great Vibes', cursive;
+  --fonte-footer: 'Roboto', serif;
+  --fonte-mensagem: 'Inter', serif;
+  --cor-primaria: #335c67;
+  --cor-secundaria: #7eada2;
+  --cor-terciaria: #ff7f50;
+  --cor-quaternaria: #234547;
+  --cor-fonte-paragrafos: #3e3e3e;
+  --cor-nossos-servicos: #ededed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 1em;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  font-family: var(--fonte-paragrafos);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  background-color: var(--cor-primaria);
+  top: 0;
+  padding: 0px 10px;
+}
+
+.logo-nav {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-contato-texto {
+  display: none;
+}
+
+#icon-instagram,
+#icon-whatsapp,
+#icon-email {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+#informacoes-contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
