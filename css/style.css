@@ -27,6 +27,21 @@ html {
   overflow-x: hidden;
 }
 
+h1,
+h2 {
+  font-family: var(--fonte-titulos);
+  color: white;
+  font-size: 3.5em;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  font-family: var(--fonte-paragrafos);
+  color: var(--cor-fonte-paragrafos);
+  font-weight: 200;
+}
+
 a {
   font-family: var(--fonte-paragrafos);
   text-decoration: none;
@@ -66,4 +81,51 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+header {
+  background-image: url('../imgs/bg_header.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+header #apresentacao-header {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 100%;
+  margin: auto;
+}
+
+header #apresentacao-header h1 {
+  text-align: center;
+}
+
+header #sobre-nos {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: -27%;
+  gap: 30px;
+  width: 100%;
+  max-width: 394px;
+  margin: auto;
+  padding: 40px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 40px;
+  text-align: center;
+}
+
+header #sobre-nos article {
+  width: 100%;
+  max-width: 400px;
+}
+
+header #sobre-nos h2, 
+header #sobre-nos h1 {
+  color: var(--cor-primaria);
+  font-size: 2em;
 }
